@@ -6,26 +6,18 @@ This is our Search Engine Project. This project divided into two parts:
 * Part A - read files in corpus, parse and index the word in dictionary:
 
 Reading files from a given corpus, segmenting them into documents Parsing the corpus in batches of 10000 documents, one by one.
-
 The parsing could be executed with or without stemming
-
 Indexing the terms of each batch: creating posting files and writing information about the terms into them.
-
 In addition, we create a file containing information about all the parsed documents and a united dictionary for the entire corpus. 
 
 
 * Part B - search and rank
 
 Loading the posting files and dictionaries generated in part A The dictionaries are restored and loaded into memory.
-
 After entering a query:
-
 The query is parsed.
-
 Its term objects are reconstructed from the dictionary
-
 If semantics is enabled the query terms are sent to the semantics model.
-
 The query terms and semantics terms (if enabled) are sent to the ranker who finds the 50 most relevant documents.
 
 
@@ -46,7 +38,6 @@ Select a posting files path.
 
 Click start to run processing the corpus.
 
-locate the stop word file in the corpus path with the name 'stopWords'.
 
 * Part B-
 
